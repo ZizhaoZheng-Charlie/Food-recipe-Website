@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { Recipe } from "@/types/recipe";
 import RecipeModal from "./RecipeModal";
 
@@ -120,10 +121,11 @@ const RecipeCarousel: React.FC<RecipeCarouselProps> = ({
               }}
             >
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={recipe.image}
                   alt={recipe.title}
-                  className={`w-full h-full object-cover transition-transform duration-500 ${
+                  fill
+                  className={`object-cover transition-transform duration-500 ${
                     recipe.locked ? "" : "group-hover:scale-110"
                   }`}
                 />

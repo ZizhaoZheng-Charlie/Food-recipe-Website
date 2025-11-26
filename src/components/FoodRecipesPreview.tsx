@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { Recipe } from "@/types/recipe";
 
 const FoodRecipesPreview: React.FC = () => {
@@ -90,10 +91,11 @@ const FoodRecipesPreview: React.FC = () => {
               }}
             >
               <div className="relative h-64 overflow-hidden">
-                <img
+                <Image
                   src={recipe.image}
                   alt={recipe.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute top-4 right-4">

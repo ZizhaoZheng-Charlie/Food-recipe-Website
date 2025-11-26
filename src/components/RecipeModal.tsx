@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Image from "next/image";
 import { Recipe } from "@/types/recipe";
 
 interface RecipeModalProps {
@@ -137,10 +138,11 @@ const RecipeModal: React.FC<RecipeModalProps> = ({ recipe, isOpen, onClose }) =>
         <div className="overflow-y-auto max-h-[90vh] hide-scrollbar">
           {/* Recipe Image */}
           <div className="relative h-64 md:h-80 overflow-hidden">
-            <img
+            <Image
               src={recipe.image}
               alt={recipe.title}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             <div className="absolute top-4 left-4">

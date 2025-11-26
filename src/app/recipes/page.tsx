@@ -37,7 +37,7 @@ const RecipesPage: React.FC = () => {
   useEffect(() => {
     setRecipes(allRecipes);
     setFilteredRecipes(allRecipes);
-  }, []);
+  }, [allRecipes]);
 
   useEffect(() => {
     let filtered = recipes;

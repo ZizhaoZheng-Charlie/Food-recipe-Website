@@ -92,7 +92,7 @@ const ContactPage: React.FC = () => {
             </h1>
             <div className="w-24 h-1 bg-palette-dusty-rose mx-auto mb-6"></div>
             <p className="font-fira text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
-              Have a question, suggestion, or recipe to share? We'd love to hear
+              Have a question, suggestion, or recipe to share? We&apos;d love to hear
               from you!
             </p>
           </div>

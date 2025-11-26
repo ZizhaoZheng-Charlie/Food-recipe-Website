@@ -58,9 +58,7 @@ const AboutPage: React.FC = () => {
           {/* Mission Section */}
           <section
             ref={sectionRef}
-            className={`mb-16 ${
-              isInView ? "animate-fade-in-up" : "opacity-0"
-            }`}
+            className={`mb-16 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
             style={{
               animationDelay: isInView ? "0.2s" : "0s",
             }}
@@ -86,9 +84,7 @@ const AboutPage: React.FC = () => {
 
           {/* Values Section */}
           <section
-            className={`mb-16 ${
-              isInView ? "animate-fade-in-up" : "opacity-0"
-            }`}
+            className={`mb-16 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
             style={{
               animationDelay: isInView ? "0.3s" : "0s",
             }}
@@ -173,9 +169,7 @@ const AboutPage: React.FC = () => {
 
           {/* Story Section */}
           <section
-            className={`mb-16 ${
-              isInView ? "animate-fade-in-up" : "opacity-0"
-            }`}
+            className={`mb-16 ${isInView ? "animate-fade-in-up" : "opacity-0"}`}
             style={{
               animationDelay: isInView ? "0.4s" : "0s",
             }}
@@ -192,26 +186,24 @@ const AboutPage: React.FC = () => {
                 celebrating the universal language of food.
               </p>
               <p className="font-fira text-base md:text-lg text-white/80 leading-relaxed mb-4">
-                We understand that in today's fast-paced world, finding time to
-                cook and share meals can be challenging. That's why we've made
-                it our mission to provide you with accessible, delicious recipes
-                that fit into your lifestyle while bringing the warmth and
-                comfort of home-cooked meals to your table.
+                We understand that in today&apos;s fast-paced world, finding
+                time to cook and share meals can be challenging. That&apos;s why
+                we&apos;ve made it our mission to provide you with accessible,
+                delicious recipes that fit into your lifestyle while bringing
+                the warmth and comfort of home-cooked meals to your table.
               </p>
               <p className="font-fira text-base md:text-lg text-white/80 leading-relaxed">
-                Whether you're a seasoned chef or just starting your culinary
-                journey, we're here to inspire, guide, and support you every
-                step of the way. Join us in discovering the peace that comes
-                through food.
+                Whether you&apos;re a seasoned chef or just starting your
+                culinary journey, we&apos;re here to inspire, guide, and support
+                you every step of the way. Join us in discovering the peace that
+                comes through food.
               </p>
             </div>
           </section>
 
           {/* Contact Section */}
           <section
-            className={`${
-              isInView ? "animate-fade-in-up" : "opacity-0"
-            }`}
+            className={`${isInView ? "animate-fade-in-up" : "opacity-0"}`}
             style={{
               animationDelay: isInView ? "0.5s" : "0s",
             }}
@@ -221,8 +213,8 @@ const AboutPage: React.FC = () => {
                 Get in Touch
               </h2>
               <p className="font-fira text-base md:text-lg text-white/80 mb-6 max-w-2xl mx-auto">
-                Have a recipe to share? Questions about our platform? We'd love
-                to hear from you!
+                Have a recipe to share? Questions about our platform? We&apos;d
+                love to hear from you!
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
@@ -248,4 +240,3 @@ const AboutPage: React.FC = () => {
 };
 
 export default AboutPage;
-
